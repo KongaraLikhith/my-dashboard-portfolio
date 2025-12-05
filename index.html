@@ -3,22 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Power BI Portfolio</title>
+<title>Power BI Portfolio</title>
 <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f4f6f8;
+    background: #f0f2f5;
     margin: 0;
     padding: 0;
   }
   header {
     background-color: #1DB954;
     color: white;
-    padding: 30px 0;
     text-align: center;
+    padding: 40px 20px;
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   main {
     display: flex;
@@ -28,56 +29,51 @@
     gap: 30px;
   }
   .card {
-    background: white;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: linear-gradient(145deg, #ffffff, #e6e9ec);
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
   }
   .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
   }
   .card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
   }
-  .card h2 {
-    font-size: 1.2rem;
-    margin: 15px 0;
-    color: #333;
-  }
-  .card a {
-    display: inline-block;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: white;
-    background-color: #1DB954;
-    padding: 10px 20px;
+  .card button {
+    margin: 20px 0;
+    padding: 12px 25px;
+    border: none;
     border-radius: 25px;
+    background-color: #1DB954;
+    color: white;
     font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
   }
-  .card a:hover {
+  .card button:hover {
     background-color: #17a144;
   }
 </style>
 </head>
 <body>
 
-<header>My Power BI Portfolio</header>
+<header>Power BI Portfolio</header>
 
 <main>
   <div class="card">
-    <img src="https://via.placeholder.com/300x180.png?text=Spotify+Dashboard" alt="Spotify Music Analytics Dashboard">
-    <h2>Spotify Music Analytics Dashboard</h2>
-    <a href="Spotify Music Analytics Dashboard.pdf" target="_blank">View Dashboard</a>
+    <img src="https://via.placeholder.com/320x180.png?text=Spotify+Dashboard" alt="Spotify Dashboard Thumbnail">
+    <button onclick="window.open('Spotify Music Analytics Dashboard.pdf', '_blank')">View Dashboard</button>
   </div>
 
-  <!-- Add more cards here for additional dashboards -->
+  <!-- Add more cards here -->
 </main>
 
 </body>
